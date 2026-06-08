@@ -1,0 +1,14 @@
+# Compiled files that are not needed
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# macOS system specific junk files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Local environment / API key configurations
+.env
+*.log
