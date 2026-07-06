@@ -3,6 +3,11 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
 
 # macOS system specific junk files
 .DS_Store
@@ -12,3 +17,6 @@ __pycache__/
 # Local environment / API key configurations
 .env
 *.log
+
+# Scan run artifacts (generated each run)
+runs/
