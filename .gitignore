@@ -20,3 +20,6 @@ venv/
 
 # Scan run artifacts (generated each run)
 runs/
+
+# Local Claude Code project guide - not part of the repo
+CLAUDE.md
