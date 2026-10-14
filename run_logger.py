@@ -38,6 +38,16 @@ class AttackResult:
     payload_preview: str = ""
     target_preview: str = ""
     auditor_response: str = ""
+    # --- defense layer (shadow mode) ------------------------------------
+    # The defense layer evaluates every payload but does not stop it: the attack
+    # still reaches the target, so one run yields both the undefended outcome
+    # (``verdict``) and what the defense would have done (``defense_blocked``).
+    # Blocking for real would leave 'what would have happened' unmeasured.
+    # ``defense_blocked=None`` means the defense was not run for this attempt.
+    defense_blocked: bool | None = None
+    defense_layer: str | None = None
+    defense_score: float = 0.0
+    defense_latency_ms: float = 0.0
     timestamp: str = field(default_factory=lambda: datetime.now().isoformat(timespec="seconds"))
 
 

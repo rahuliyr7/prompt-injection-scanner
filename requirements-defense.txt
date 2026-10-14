@@ -1,0 +1,10 @@
+# Optional: enables the L2 pretrained-classifier layer.
+#
+# Default model (ungated, no token needed):
+#   protectai/deberta-v3-base-prompt-injection-v2
+# To use Meta's Prompt Guard instead, accept its license on Hugging Face,
+# run `huggingface-cli login`, then pass:
+#   --classifier-model meta-llama/Llama-Prompt-Guard-2-86M
+transformers>=4.40
+torch>=2.2
+sentencepiece>=0.2.0   # deberta-v3 tokenizer

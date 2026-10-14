@@ -23,3 +23,11 @@ runs/
 
 # Local Claude Code project guide - not part of the repo
 CLAUDE.md
+
+# Defense eval output (regenerate with: python eval_defense.py)
+defense_eval.json
+
+# Stray local scratch files, not part of the project
+pythonLink
+# Orphaned duplicate of defense/corpus/benign_dev.jsonl; not referenced by code
+defense/corpus/benign.jsonl
