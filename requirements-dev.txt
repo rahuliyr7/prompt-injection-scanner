@@ -1,0 +1,6 @@
+# Everything needed to run the full test suite (pytest collects
+# test_defense.py, test_logging.py and test_matcher.py).
+# The scanner imports ollama at module level, so it is required even though
+# the tests never call a model.
+-r requirements.txt
+pytest>=8.0

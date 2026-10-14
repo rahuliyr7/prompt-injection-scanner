@@ -1,1 +1,6 @@
 ollama>=0.3.0
+
+# --- defense layer, L2 classifier (optional) --------------------------------
+# The heuristic layer (L1) and the eval harness need nothing beyond the stdlib.
+# Install these only to enable the pretrained-classifier layer:
+#   pip install -r requirements-defense.txt

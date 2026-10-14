@@ -23,3 +23,6 @@ runs/
 
 # Local Claude Code project guide - not part of the repo
 CLAUDE.md
+
+# Defense eval output (regenerate with: python eval_defense.py)
+defense_eval.json
